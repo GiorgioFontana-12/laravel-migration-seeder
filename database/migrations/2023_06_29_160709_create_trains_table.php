@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('departure_station')->nullable();
             $table->string('arrival_station')->nullable();
             $table->string('departure_date')->nullable();
-            $table->char('departure_time', 5)->nullable();
-            $table->char('arrival_time', 5)->nullable();
+            $table->time('departure_time', 5)->nullable();
+            $table->time('arrival_time', 5)->nullable();
             $table->char('train_code', 30)->nullable();
             $table->smallInteger('coaches_number')->nullable();
             $table->boolean('on_time')->nullable();
